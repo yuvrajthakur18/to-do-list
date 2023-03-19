@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-DO-LIST</title>
+    
+    <link rel="stylesheet" href="/styles.css" />
+    
+    <!--To use Icons from net u need this link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>TO DO LIST</title>
 </head>
 <body>
-    helloooo 
+    <section class = "nav__section">
+        <header>
+            <nav class="navbar">
+                    <a href="#" class="link_img"><img class=img_tag src="/images/To do list logo.png" alt="to-do-list logo" /></a>
+                    <a href="#" class="link">Notes</a>
+                    <a href="#" class="link">Tasks</a>
+                    <a href="#" class="link">Reminders</a>
+                <div class="navbar__right_side" id="buttons_right_side">
+                    <button type="button" class="navbar__right_side_button"><i class="fa-sharp fa-solid fa-moon"></i> Theme </button>
+                    <button type="button" onclick="open_add_new()" class="navbar__right_side_button"> <i class="fa-solid fa-plus"></i> Add New </button>
+                </div>
+                <div class="navbar__menu_icon"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+        </header>
+        <div class="div__search_bar">
+            <input class="search_bar" type="search" placeholder="Search Task..."/>
+            <span class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+    </section>
+
+    <!--                                                         POP - UP   FORM
+         
+    <section class="add_new_section" id="add_new_section_id">
+        <form class="form_container">
+            <div class="add_new_header">
+                <h5>Add New Task</h5>
+            </div>
+            <div add_new_body>
+                <div>
+                    <label for="imageURL" class="form_label">Image URL</label>
+                    <input type="url" class="form_input" id="imageUrl" placeholder="https://example.com/image.png" />
+                </div>
+                <div>
+                    <label for="taskTitle" class="form_label">Task Title</label>
+                    <input type="text" class="form_input" id="taskTitle" placeholder="Enter task name" /> 
+                </div>
+                <div>
+    
+                </div>
+                <div>
+    
+                </div>
+            </div>
+        </form>
+    </section>
+    -->
+
+    <section class="add_new_modal">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form class="form_container">
+                    <div class="add_new_header">
+                        <h3 class="header"> Add New Task
+
+                        <button type="button" onclick="closeX()" class="close-x-mark"> <i class="fa-solid fa-xmark"></i> </button> </h3>
+                    </div>
+                    <div add_new_body>
+                        <div>
+                            <label for="imageURL" class="form_label">Image URL</label>
+                            <input type="url" class="form_input" id="imageUrl" placeholder="https://example.com/image.png" />
+                        </div>
+                        <div>
+                            <label for="taskTitle" class="form_label">Task Title</label>
+                            <input type="text" class="form_input" id="taskTitle" placeholder="Enter task name" /> 
+                        </div>
+                        <div>
+                            <label for="taskType" class="form_label">Task Type</label>
+                            <input type="text" class="form_input" id="taskType" placeholder="Enter task type" />
+                        </div>
+                        <div>
+                            <label for="taskDescription" class="form_label">Task Description</label>
+                            <textarea class="form_input" id="taskDescription" placeholder="Explain something about it..." rows="4"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script type = "text/javascript" src = "script.js"></script>
+
 </body>
+
 </html>

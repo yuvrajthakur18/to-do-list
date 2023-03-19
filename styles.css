@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    /*background-color: #0b253a;
+    background-color: aqua;
+    
+    
+    */
+}
+
+.nav__section {
+    background-color: #ebf2ff;
+    width: 100%;
+}
+
+.navbar {
+    display : flex;     /* All arranged themselves with proper space */
+    /*width: 100%;*/
+    gap: 3%;   /* space between Notes Tasks Reminders */
+    align-items: center;    /* height-wise arrangement in center wrt logo image */
+    padding: 54px 24px;     /* Top right bottom left*/
+    height: 60px;   /* Vertical height */
+}
+
+.navbar__right_side {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    justify-content: end;    /*Justify content horizontaly */
+    align-items: center;
+    padding: 54px 24px;
+    height: 60px;
+}
+
+.navbar__menu_icon {
+    display: none;
+}
+
+.img_tag{
+    width: 150px;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    color: black;
+    font-size: 18px;
+    font-stretch: extra-expanded;
+    font-weight: 100;
+}
+
+.navbar__right_side_button {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(-180deg, #17759C 0%, #1E96C8 100%);
+    padding: 7px;
+    border: 1px solid silver;
+    border-radius :10%;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 75;
+}
+.navbar__right_side_button:hover{
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+/* -----------------------------------------------------------------------------------*/
+
+.div__search_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_bar {
+    padding: 10px;
+    width: 40% ;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.search_icon {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;     /*To get it over the top of everything*/
+    top: 0;         /* ----> */
+    left: 0;        /*This two are to cover whole screen ratio*/
+    width: 100% ;
+    height: 100% ;
+    padding-top: 10%;
+    padding-left: 30%;
+    border: 3px solid black;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
+  /*  
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  */
+}
+
+.form_container {
+    max-width: 600px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 1.2%;
+}
+
+.header {
+    display: flex;
+    color: rgb(7, 41, 163);
+    padding: 4px 0 5px 0 ; /*Top right Bottom left*/
+}
+
+.close-x-mark {
+    display: flex;
+    color: red;
+    background-color: white;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 74%;
+    border: none;
+}
+.close-x-mark:hover {
+    color:darkred;
+    border: solid 1px darkred;
+    border-radius: 3px;
+}
+
+.form_input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar .link {
+        display: none;
+    }
+    
+    .navbar__right_side_button {
+        display: none;
+    }
+    
+    .navbar__menu_icon {
+        display: flex;
+        padding: 5px;
+        border: solid 1px grey;
+        border-radius: 5px;
+    }
+
+    .img_tag {
+        width: 120px;
+    }
+}
