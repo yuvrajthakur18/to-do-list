@@ -1,2 +1,2 @@
 # to-do-list
-A simple to do list project based on google notes.
+A simple to do list project inspired by google notes.
